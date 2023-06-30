@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Kalkulator</title>
+</head>
+<body>
+    
+</body>
+
+    <script>
+        let num1 = prompt("Masukkan angka pertama: ");
+        let num2 = prompt("Masukkan angka kedua: ");
+
+        let result;
+
+        let operator = prompt("Masukkan operasi yang ingin Anda lakukan (+, -, *, /): ");
+
+        if(operator === '+'){
+            result = parseInt(num1) + parseInt(num2);
+        } else if(operator === '-'){
+            result = parseInt(num1) - parseInt(num2);
+        } else if(operator === '*'){
+            result = parseInt(num1) * parseInt(num2);
+        } else if(operator === '/'){
+            result = parseInt(num1) / parseInt(num2);
+        } else {
+            alert("Operator tidak valid!");
+        }
+
+        alert("Hasilnya adalah: " + result);
+    </script>
+</html>
